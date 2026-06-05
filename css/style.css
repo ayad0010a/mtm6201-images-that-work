@@ -155,7 +155,7 @@ a {
   min-height: 90vh;
   display: flex;
   align-items: flex-end;
-
+}
 /* TASK 3: img fills the hero exactly like a background image would */
 .hero__bg {
   position: absolute;
