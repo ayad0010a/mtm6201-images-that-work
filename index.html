@@ -40,8 +40,24 @@
     The hero is a CSS background image — remove it and replace it
     with a real <img> so srcset can work.
   ============================================================ -->
-  <section class="hero">
-    <!-- Task 3: Add your <img> element here, before hero__content -->
+   <section class="hero">
+ 
+    <!-- TASK 3: Added <img> as first child so srcset can work -->
+    <!-- TASK 3: src is the PNG fallback for browsers that don't support WebP/srcset -->
+    <!-- TASK 3: srcset lists all four WebP files with their actual pixel widths -->
+    <!-- TASK 3: sizes="100vw" because the hero is always full viewport width -->
+    <!-- TASK 3: class="hero__bg" is styled in CSS to fill the section like a background image -->
+    <img
+      src="images/hero.png"
+      srcset="images/hero-400.webp 400w,
+              images/hero-800.webp 800w,
+              images/hero-1200.webp 1200w,
+              images/hero-1920.webp 1920w"
+      sizes="100vw"
+      alt="A hiker walking a misty mountain trail at dawn"
+      class="hero__bg"
+    >
+ 
     <div class="hero__content">
       <p class="hero__label">Spring / Summer 2026</p>
       <h1 class="hero__title">Built for<br>the Trail</h1>
